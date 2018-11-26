@@ -2,7 +2,7 @@
 <body>
     <h1>RPG GEN MASTERS</h1> 
     
-    <%= form_for :character, url: characters_path do |f| %>
+  <%= form_for :character, url: characters_path do |f| %>
     <p>     
       <%= f.label :name %><br>     
       <%= f.text_field :name %>   
@@ -16,5 +16,5 @@
     <p>     
     <%= f.submit %>   
     </p>   
-    <% end %>
+  <% end %>
 </body>
