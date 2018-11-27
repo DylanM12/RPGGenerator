@@ -3,6 +3,20 @@
     <h1>RPG GEN MASTERS</h1> 
     
   <%= form_for :character, url: characters_path do |f| %>
+    <% if @character.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@character.errors.count, "error") %> prohibited
+          this character from being saved:
+        </h2>
+        <ul>
+          <% @character.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    
     <p>     
       <%= f.label :name %><br>     
       <%= f.text_field :name %>   
@@ -19,4 +33,5 @@
   <% end %>
   
   <%= link_to "Back", characters_path %>
-</body>
+  </body>
+  
