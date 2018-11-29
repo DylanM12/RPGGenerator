@@ -2,19 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-    background-color: black;
+    background-image: url("https://static1.squarespace.com/static/5a173f16ace86416b07c25f1/t/5a3ce23f085229f1e139341c/1513939532248/fantasy+album+cover6+-+in+wide+format.jpg?format=1500w");
+    background-repeat: no-repeat;
+    background-size: 1600px 1000px;
     color: #00FF00;
+    
     
 }
 h1 {
-    color: #00FF00;
+    color: #FACC2E;
 }
 p {
     color: #00FF00;
 }
 table{
-    color: #00FF00;
+    color: #FACC2E;
 }
 td {
-    border: 2px solid #00FF00;
+    border: 2px solid #A901DB;
+}
+
+a:link{
+    color: #2EFEF7;
+}
+
+a:visited{
+    color:hotpink;
 }
