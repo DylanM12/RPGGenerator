@@ -17,25 +17,25 @@
     </p>
     
     <p>
-        <strong>Information:</strong>
+        <strong>Info:</strong>
         <%= campaign.info %>
     </p>
 <% end %>
 
 <h2>Add A Campaign for this Character</h2>
-<%= form_for([@character, @character.campaigns.build]) do |f| %>
+
+<%= form_for([@character, @character.campaigns.build]) do |t| %>
     <p>
-        <%= f.label :title %></br>
-        <%= f.text_field :title %>
+        <%= t.label :title %>
+        <%= t.text_field :title %>
+    </p>
+    <p>
+        <%= t.label :info %>
+        <%= t.text_area :info %>
     </p>
     
     <p>
-        <%= f.label :info %><br>
-        <%= f.text_area :info %>
-    </p>
-    
-    <p>
-        <%= f.submit %>
+        <%= t.submit %>
     </p>
 <% end %>
 
