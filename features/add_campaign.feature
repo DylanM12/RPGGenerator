@@ -13,7 +13,7 @@ Feature: Add a new campaign
   And I should see the "Name" field
   And I should see the "Description" field
   When I click on the "Save Character" button 
-  Then I should be on the "Campaigns Page"
+  Then I should be on the "Show Character" page
   And I should see the "Title" field
   And I should see the "Info" field
   
