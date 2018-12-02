@@ -1,4 +1,5 @@
 <body>
+
 <p>
     Character Name: 
     <%= @character.name %>
@@ -20,17 +21,22 @@
         <strong>Info:</strong>
         <%= campaign.info %>
     </p>
+    
+          <td><%= link_to 'Destroy',
+                                character_campaign_path(campaign),
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %></td>
 <% end %>
 
 <h2>Add A Campaign for this Character</h2>
 
 <%= form_for([@character, @character.campaigns.build]) do |t| %>
     <p>
-        <%= t.label :title %>
+        <%= t.label :title %></br>
         <%= t.text_field :title %>
     </p>
     <p>
-        <%= t.label :info %>
+        <%= t.label :info %></br>
         <%= t.text_area :info %>
     </p>
     
