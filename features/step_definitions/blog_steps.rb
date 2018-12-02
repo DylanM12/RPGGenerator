@@ -13,3 +13,7 @@ end
 Then(/^I should see the "([^"]*)" field$/) do |field_name|
   expect(page).to have_field(field_name)
 end
+
+When(/^I click on the "([^"]*)" button$/) do |button_name|
+click_button button_name
+end
