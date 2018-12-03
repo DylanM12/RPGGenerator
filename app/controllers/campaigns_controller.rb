@@ -7,7 +7,7 @@ class CampaignsController < ApplicationController
     
     def destroy
         @character = Character.find(params[:character_id])
-        @campain = @character.campaigns.find(params[:id])
+        @campaign = @character.campaigns.find(params[:id])
         @campaign.destroy
         redirect_to character_path(@character)
     end

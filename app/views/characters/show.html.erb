@@ -1,9 +1,7 @@
 
 <body>
-<<<<<<< HEAD
-=======
+
 <h1>Show Character</h1>
->>>>>>> bd3e105217c9cc5e4d5614ef13b1a4aeb117ccab
 
 <p>
     Character Name: 
@@ -27,10 +25,12 @@
         <%= campaign.info %>
     </p>
     
-          <td><%= link_to 'Destroy',
-                                character_campaign_path(campaign),
-                                method: :delete,
-                                data: { confirm: 'Are you sure?' } %></td>
+    <p>
+          <td><%= link_to 'Destroy Campaign', [campaign.character, campaign],
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
+    </p>
+    
 <% end %>
 
 <h2>Add A Campaign for this Character</h2>
