@@ -1,5 +1,4 @@
 class Character < ApplicationRecord
+    has_many :campaigns, dependent: :destroy
     
-    
-    has_many :campaigns
 end
