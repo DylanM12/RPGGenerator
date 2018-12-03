@@ -5,7 +5,7 @@ Feature: Add a new character entry
   I want to be able to add a new character entry
   
 Scenario: As a character creator I want to be able to navigate from the homepage to the new character form
-  Given I am on the home page
+ Given I am on the home page
   When I click on the "Characters Page" link
   Then I should be on the "Listing characters" page 
   When I click on the "Create A New Character" link
