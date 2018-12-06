@@ -4,8 +4,8 @@
     <li><%= link_to "Create A New Character", new_character_path %></li>
 </ul>
 <body>
-    <h1>RPG GEN MASTERS</h1> 
-    
+    <h1>Character Creation</h1> 
+    </br>
   <%= form_for :character, url: characters_path do |f| %>
     <% if @character.errors.any? %>
       <div id="error_explanation">
